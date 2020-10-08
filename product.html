@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js"></script>
+  <style>
+      .flex-container_product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    top: 700px;
+}
+.flex{
+    padding: 10px;
+    background-color: #fff;
+    border: .5px dotted black; 
+}
+.flex img{
+ width:285px;
+ height: 380px;
+ object-fit: cover;
+ object-position: center;
+ box-shadow: 5px 5px 5px black;
+ z-index: -4;
+ margin: 20px 60px;
+ padding: 10px;
+}
+.flex h3, .flex p{
+ width: 280px;
+ font-size: 18px;
+ text-align: center;
+ margin-left:55px;
+}
+      header {
+  background-color :#000033;
+  font-family :Gotham;
+  height : 70px;
+  }
+  .bar_product img {
+    margin-top: -25px;
+  height: 60px;
+  width:80px;
+  }
+  .bar_product ul {
+  list-style-type : none;
+  margin : auto;
+  overflow : hidden;
+  }
+  .bar_product li {
+  float : left;
+  }
+  .bar_product li a {
+  display : flex;
+  flex-wrap: wrap;
+  text-transform :none;
+  color : white;
+  text-align : center;
+  padding : 30px 20px;
+  text-decoration : none;
+  }
+  .bar_product li a:hover {
+    color:brown;
+  }
+  .bar_product ul a{
+    color:#fff;
+    text-decoration:none;
+    font-size:17px; 
+}
+.bar_product ul li::after{
+    content: '';
+    width:0;
+    height:2px;
+    background:yellow;
+    display:block;
+    margin:auto;
+    transition: .5s;
+}
+.bar_product ul li:hover::after{
+    width:100%;
+}
+.product_main{
+    background-color: #EAEDED;
+}
+.product_main h2{
+ width: 600px;
+ height: 100px;
+ padding: 20px 5px;
+ margin: 10px 20%;
+ color:#fff;
+ background-color: black;
+ opacity: 0.8;
+ border: 2px solid #100011;
+ text-align: center;
+ border-radius: 10px;
+ font-size: 30px;
+ 
+}
+strong{
+    color:red;
+    font-weight: 400;
+}
+footer{
+    position: relative;
+    top: 3860px;
+}
+@media screen {
+    p{
+       color:black; 
+    }
+}
+</style>
+</head>
+  <!---calling the function begin in js --> 
+<body onload="start()">
+  <!---navigation bar html code--> 
+    <header>
+      <nav class="bar_product">
+        <ul>
+          <li><a href="index.html"> <img src="https://media-cdn.tripadvisor.com/media/photo-s/04/18/02/73/gallery-of-african-art.jpg" alt="logo"></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+<main>
+    <section class="product_main">
+        
+        <h2 class="declare" style="width: 70%; height: 30%;position: relative;
+        top:20%;
+        left: 0;"><strong>Sale Ends Oct 25, 20-30% Off </strong>Sitewide + additional discounts below.</h2><br>
+        
+        <section class="flex-container_product">
+            <div class="flex">
+       <img src="https://i.pinimg.com/474x/a1/b2/98/a1b298a112395d707071bd41bf542fc7.jpg" alt="mother-bebe">
+       <h3>An African Mother and Baby Connecting and Wildlife</h3>
+       <p>$200</p>
+       <button type="button" class="btn_flex">Choose!</button>
+            </div>
+            <div class="flex">
+                <img src="https://insideafricanart.com/wp-content/uploads/bb-plugin/cache/Kimbo-Big-people-2011-landscape.jpg" alt="mother-bebe">
+                <h3>Village Life and People are Interacting and Selling Vegetables</h3>
+                <p>$180</p>
+                <button type="button" class="btn_flex">Choose!</button>
+                     </div>
+                     <div class="flex">
+                        <img src="https://i.pinimg.com/originals/dc/44/81/dc448159d2622ea0839b4f358d169550.jpg" alt="mother-bebe">
+                        <h3>Wildlife Animals are eating Drinking on a Beautiful Sunset</h3>
+                        <p>$300</p>
+                        <button type="button" class="btn_flex">Choose!</button>
+                             </div>
+                             <div class="flex">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSHLTr-Hvym7y75UQfS2Qp3JThCYsW9IwhfRg&usqp=CAU" alt="mother-bebe">
+                                <h3>Africam Queen wearing Some of The Traditional Clothes</h3>
+                                <p>$200</p>
+                                <button type="button" class="btn_flex">Choose!</button>
+                                     </div>
+                                     <div class="flex">
+                                        <img src="https://i.pinimg.com/474x/a2/62/df/a262dfa322a1c206b72f5fdd38e243db.jpg" alt="mother-bebe">
+                                        <h3>A women carring a pot full of water, Hard Worker</h3>
+                                        <p>$279</p>
+                                        <button type="button" class="btn_flex">Choose!</button>
+                                             </div>
+                                             <div class="flex">
+                                                <img src="https://i.pinimg.com/474x/f3/ac/25/f3ac254d9e8a4ad92ca6e3a1b4438a2c.jpg" alt="mother-bebe">
+                                                <h3>A young man wearing a traditional cloth, act modern</h3>
+                                                <p>$130</p>
+                                                <button type="button" class="btn_flex">Choose!</button>
+                                                     </div>
+                                                     <div class="flex">
+                                                        <img src="https://i.pinimg.com/564x/0c/e1/97/0ce197506d705fe34be3661f6eed3400.jpg" alt="mother-bebe">
+                                                        <h3>Mixed traditional Status and Historical Believes</h3>
+                                                        <p>$500</p>
+                                                        <button type="button" class="btn_flex">Choose!</button>
+                                                             </div>
+                                                             <div class="flex">
+                                                                <img src="https://i.pinimg.com/474x/e8/38/a7/e838a7332b1810c84ebe7cd9de140a97.jpg" alt="mother-bebe">
+                                                                <h3>Mixed status with a powerful protector hand, To Protect The Village</h3>
+                                                                <p>$520</p>
+                                                                <button type="button" class="btn_flex">Choose!</button>
+                                                                     </div>
+                                                                     <div class="flex">
+                                                                        <img src="https://i.pinimg.com/474x/b3/b4/48/b3b4484568ab3998e950a7a5c3270a2d.jpg" alt="mother-bebe">
+                                                                        <h3>A man With a Head of Heart Meaning That You are What you think about.</h3>
+                                                                        <p>$450</p>
+                                                                        <button type="button" class="btn_flex">Choose!</button>
+                                                                             </div>
+                                                                             <div class="flex">
+                                                                                <img src="https://i.pinimg.com/474x/6d/2c/3c/6d2c3cdc118c34bd883a4895a93c7389.jpg" alt="mother-bebe">
+                                                                                <h3>Abstract. A man celebrating all of life Beauty. Life, Health, Happiness and Love </h3>
+                                                                                <p>$600</p>
+                                                                                <button type="button" class="btn_flex">Choose!</button>
+                                                                                     </div>
+                                                                                     <div class="flex">
+                                                                                        <img src="https://i.pinimg.com/474x/8f/43/fc/8f43fc76e13e29b54bcb3b59088c8863.jpg" alt="mother-bebe">
+                                                                                        <h3>Women aligned, covered and holding their kids</h3>
+                                                                                        <p>$295</p>
+                                                                                        <button type="button" class="btn_flex">Choose!</button>
+                                                                                             </div>
+                                                                                             <div class="flex">
+     <img src="https://i.pinimg.com/474x/7d/f5/62/7df562f60e48769187c7443bcc53b859.jpg" alt="mother-bebe">
+            <h3>African Woman Carrying Clay Pot on her head - Two goats Canvas Print / Canvas Art by Loraine Yaffe</h3>
+             <p>$195</p>
+             <button type="button" class="btn_flex">Choose!</button>
+             </div>
+        <div class="flex">
+        <img src="https://sl-cdn.singulart.com/Q9tSkHcvcDf12DUgg6IsLtU_fuo=/fit-in/300x0/filters:format(webp):quality(65)/artworks/v2/cropped/7037/main/zoom/312285_97df4fb64f9024e66eb3b0558d57090c.jpeg" alt="mother-bebe">
+        <h3>Acrylic on Canvas</h3>
+        <p>60x48in $2,950</p>
+        <button type="button" class="btn_flex">Choose!</button>
+             </div>
+             <div class="flex">
+                <img src="https://sl-cdn.singulart.com/mfunIyU1tSjB9BuihmiYUv7lPaI=/fit-in/300x0/filters:format(webp):quality(65)/artworks/pictures/cropped/7037/23207/zoom/serie_23207_ea8d81ee997018965eacfdbc547afbdf.jpeg" alt="mother-bebe">
+                <h3>Oil on Wood</h3>
+                        <p>46x34in, $1,200</p>
+                <button type="button" class="btn_flex">Choose!</button>
+                     </div>
+                     <div class="flex">
+                        <img src="https://sl-cdn.singulart.com/UjtK0NiBay-C90YB9tzf6p2JsFQ=/fit-in/300x0/filters:format(webp):quality(65)/artworks/v2/cropped/7037/main/zoom/799319_c11b273bcf294bba37e37952d975f3a9.jpeg" alt="mother-bebe">
+                        <h3>Oil on Canvas</h3>
+                        <p>43x59in, $3,320</p>
+                        <button type="button" class="btn_flex">Choose!</button>
+                             </div>         
+
+                            </section>
+                            <h4 style="text-align: center; width: 100%;">*An Amazing Paint Made With Care and Attention Just For You</h4>
+    </section>
+</main>
+<footer class="footer_content">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/04/18/02/73/gallery-of-african-art.jpg" alt="logo" class="logoimg2">
+    <div class="first_content">
+   <h1>Customer service</h1>
+   <p>Contact us</p>
+   <p>Legal notices</p>
+   <p>General Terms and Conditions</p>
+   <p>Customer testimonials</p>
+   <p>Offer a Gift Card</p>
+   <p>Get $200 off!</p>
+   <p>Free art advisory</p>
+   <p>Art for Offices</p>
+   <p>Art for Interior Designers</p>
+   <p>+1 646-844-9541</p>
+   </div>
+ <div class="first_content">
+        <h1>Who are we</h1>
+        <p>About us</p>
+        <p>Our artists</p>
+        <p>Magazine</p>
+        <p>The team</p>
+        <p>Our selection criteria</p>
+        <p>FAQ</p>
+</div>
+    <div class="first_content">
+        <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d389693.5036551504!2d-80.80836938758921!3d35.08534949726752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856a0005405ad75%3A0x2fe1a5af7b25d767!2sPetra&#39;s!5e0!3m2!1sen!2sus!4v1601858601071!5m2!1sen!2sus" width="250" height="200"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </figure>
+    </div>
+    <div class="first_content" id="icon_menu2">
+        <h3>Follow us</h3>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram">
+            </i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-pinterest"></i>
+    </div>
+</footer>
+</body>
+</html>
